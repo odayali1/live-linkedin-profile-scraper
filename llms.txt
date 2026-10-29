@@ -1,0 +1,33 @@
+# Live LinkedIn Profile Scraper
+
+> Scrape a live full LinkedIn profile from a profile URL. A miss is free. Starting from $0.90 per 1,000 live profiles.
+
+Mawsool publishes this as an Apify Actor. A hit returns the profile fetched at run time: headline, company, experience with dates and descriptions, education, skills, certifications, courses, languages, publications, and patents. A miss is not charged. The response does not include email or phone.
+
+## Run
+
+- Apify Actor: https://apify.com/oday/mawsool-live-linkedin-profile
+- Call: `oday/mawsool-live-linkedin-profile`
+- API key: https://mawsool.tech/ and https://docs.mawsool.tech/
+- Contact: osama@mawsool.tech, info@mawsool.tech
+
+## Price
+
+Gold, Platinum, and Diamond are $0.90 per 1,000 live profiles. Silver is $1.60. Bronze is $2.00. The free plan is $2.50. A miss is free.
+
+## Use it when
+
+You have LinkedIn profile URLs and you want the full live profile, including a large file.
+
+## Use something else when
+
+The URL does not open: https://apify.com/oday/mawsool-fix-broken-linkedin-urls
+You only need company and headline: https://apify.com/oday/mawsool-linkedin-profile-freshness
+You need the personal email: https://apify.com/oday/mawsool-linkedin-personal-email-finder
+
+## Pages
+
+- A miss is free: docs/no-match-no-charge.md
+- What the live profile contains: docs/live-full-profile.md
+
+Mawsool is not affiliated with LinkedIn.

@@ -1,0 +1,61 @@
+{
+  "title": "Live LinkedIn Profile Scraper | Miss Free",
+  "type": "object",
+  "schemaVersion": 1,
+  "description": "Send LinkedIn profile URLs. A hit returns the live full profile: experience with dates and descriptions, education, skills, certifications, and more. No match, no charge. This does not return email or phone.",
+  "properties": {
+    "urls": {
+      "title": "LinkedIn profile URLs",
+      "type": "array",
+      "description": "Profile URLs that already open. Example: https://www.linkedin.com/in/example/",
+      "editor": "stringList",
+      "prefill": ["https://www.linkedin.com/in/osama-abdelhadi/"],
+      "sectionCaption": "1) LinkedIn URLs",
+      "sectionDescription": "One URL, a list, a CSV, or a large file. A profile that is not found is free. A URL that no longer opens belongs in Fix Broken LinkedIn URLs first.",
+      "items": { "type": "string" }
+    },
+    "urlsCsv": {
+      "title": "Or paste CSV",
+      "type": "string",
+      "description": "CSV with a url or linkedinUrl column. One profile URL per row is also accepted.",
+      "editor": "textarea",
+      "prefill": "url\nhttps://www.linkedin.com/in/osama-abdelhadi/"
+    },
+    "fileUrl": {
+      "title": "Or upload a CSV file",
+      "type": "string",
+      "description": "CSV export from HubSpot, Salesforce, Clay, or an ATS. Column: url, linkedinUrl, or linkedin_url.",
+      "editor": "fileupload"
+    },
+    "maxUrls": {
+      "title": "Maximum URLs",
+      "type": "integer",
+      "default": 100,
+      "minimum": 1,
+      "maximum": 1000000,
+      "sectionCaption": "2) Limits",
+      "sectionDescription": "You pay only when a live profile comes back. A miss is free. Built for a single profile or a file of up to 1,000,000 URLs.",
+      "description": "Cost-control cap. Maximum 1,000,000."
+    },
+    "concurrency": {
+      "title": "Concurrent requests",
+      "type": "integer",
+      "description": "How many profiles to fetch at the same time.",
+      "default": 20,
+      "minimum": 1,
+      "maximum": 50
+    },
+    "resumeId": {
+      "title": "Resume ID (optional)",
+      "type": "string",
+      "description": "Reuse the same ID after a stopped large run. Profiles already returned are skipped, so you are not charged again.",
+      "editor": "textfield"
+    },
+    "freshStart": {
+      "title": "Fetch finished profiles again",
+      "type": "boolean",
+      "description": "Turn this on to ignore saved progress and fetch the whole list again.",
+      "default": false
+    }
+  }
+}

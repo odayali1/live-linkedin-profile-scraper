@@ -1,0 +1,132 @@
+{
+  "actorSpecification": 1,
+  "title": "Live LinkedIn profiles",
+  "description": "One row per URL. The Live profile view is the person as of this run. Experience, credentials, and the about section are the full record. A No match, free row was not charged.",
+  "fields": {
+    "type": "object",
+    "properties": {
+      "inputUrl": { "type": "string", "title": "Input URL" },
+      "linkedinUrl": { "type": ["string", "null"], "title": "LinkedIn URL" },
+      "result": { "type": "string", "title": "Result" },
+      "fullName": { "type": ["string", "null"], "title": "Name" },
+      "firstName": { "type": ["string", "null"], "title": "First name" },
+      "lastName": { "type": ["string", "null"], "title": "Last name" },
+      "headline": { "type": ["string", "null"], "title": "Headline" },
+      "jobTitle": { "type": ["string", "null"], "title": "Current title" },
+      "company": { "type": ["string", "null"], "title": "Current company" },
+      "companyLinkedInUrl": { "type": ["string", "null"], "title": "Company URL" },
+      "location": { "type": ["string", "null"], "title": "Location" },
+      "country": { "type": ["string", "null"], "title": "Country" },
+      "industry": { "type": ["string", "null"], "title": "Industry" },
+      "seniority": { "type": ["string", "null"], "title": "Seniority" },
+      "jobFunction": { "type": ["string", "null"], "title": "Function" },
+      "connections": { "type": ["string", "null"], "title": "Connections" },
+      "followers": { "type": ["integer", "null"], "title": "Followers" },
+      "about": { "type": ["string", "null"], "title": "About" },
+      "skills": { "type": ["string", "null"], "title": "Skills" },
+      "skillsCount": { "type": "integer", "title": "Skills count" },
+      "languages": { "type": "array", "title": "Languages" },
+      "courses": { "type": "array", "title": "Courses" },
+      "experienceCount": { "type": "integer", "title": "Roles" },
+      "experience": { "type": "array", "title": "Experience" },
+      "educationCount": { "type": "integer", "title": "Schools" },
+      "education": { "type": "array", "title": "Education" },
+      "certificationsCount": { "type": "integer", "title": "Certificates" },
+      "certifications": { "type": "array", "title": "Certifications" },
+      "publications": { "type": "array", "title": "Publications" },
+      "patents": { "type": "array", "title": "Patents" },
+      "honors": { "type": "array", "title": "Honors" },
+      "projects": { "type": "array", "title": "Projects" },
+      "volunteer": { "type": "array", "title": "Volunteer" },
+      "organizations": { "type": "array", "title": "Organizations" },
+      "activities": { "type": "array", "title": "Activity" },
+      "checkedAt": { "type": "string", "title": "Checked at" },
+      "charge": { "type": "string", "title": "Charge" }
+    }
+  },
+  "views": {
+    "live": {
+      "title": "Live profile",
+      "transformation": {
+        "fields": [
+          "inputUrl",
+          "linkedinUrl",
+          "result",
+          "fullName",
+          "headline",
+          "jobTitle",
+          "company",
+          "location",
+          "seniority",
+          "industry",
+          "connections",
+          "followers",
+          "experienceCount",
+          "educationCount",
+          "skillsCount",
+          "certificationsCount",
+          "charge",
+          "checkedAt"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "inputUrl": { "label": "Input URL", "format": "link" },
+          "linkedinUrl": { "label": "LinkedIn URL", "format": "link" },
+          "companyLinkedInUrl": { "label": "Company URL", "format": "link" },
+          "checkedAt": { "label": "Checked at", "format": "date" }
+        }
+      }
+    },
+    "career": {
+      "title": "Experience and about",
+      "transformation": {
+        "fields": [
+          "inputUrl",
+          "fullName",
+          "headline",
+          "jobTitle",
+          "company",
+          "about",
+          "skills",
+          "languages",
+          "experience",
+          "education",
+          "charge"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "inputUrl": { "label": "Input URL", "format": "link" }
+        }
+      }
+    },
+    "credentials": {
+      "title": "Certifications and more",
+      "transformation": {
+        "fields": [
+          "inputUrl",
+          "fullName",
+          "certifications",
+          "courses",
+          "publications",
+          "patents",
+          "honors",
+          "projects",
+          "volunteer",
+          "organizations",
+          "activities",
+          "charge"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "inputUrl": { "label": "Input URL", "format": "link" }
+        }
+      }
+    }
+  }
+}

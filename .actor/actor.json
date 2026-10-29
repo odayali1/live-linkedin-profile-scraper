@@ -1,0 +1,30 @@
+{
+  "$schema": "https://apify.com/schemas/v1/actor.ide.json",
+  "actorSpecification": 1,
+  "name": "mawsool-live-linkedin-profile",
+  "title": "Live LinkedIn Profile Scraper | Miss Free",
+  "description": "Paste LinkedIn profile URLs and get a live full profile: headline, company, experience with dates and descriptions, education, skills, and certifications. No match, no charge. Starting from $0.90 per 1,000. No cookies. Built for bulk CRM and recruiting lists. A profile that is not found is free.",
+  "seoTitle": "Live LinkedIn Profile Scraper | Miss Free",
+  "seoDescription": "Scrape a live full LinkedIn profile: roles with dates, education, skills, and certifications. No match, no charge. From $0.90 per 1,000. No cookies.",
+  "categories": ["LEAD_GENERATION", "SOCIAL_MEDIA", "AUTOMATION"],
+  "version": "1.0",
+  "buildTag": "latest",
+  "minMemoryMbytes": 256,
+  "maxMemoryMbytes": 2048,
+  "defaultRunOptions": {
+    "build": "latest",
+    "timeoutSecs": 86400,
+    "memoryMbytes": 512
+  },
+  "meta": {
+    "templateId": "ts-empty",
+    "generatedBy": "Mawsool"
+  },
+  "input": "./input_schema.json",
+  "output": "./output_schema.json",
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  },
+  "pricing": "./pay_per_event.json",
+  "dockerfile": "../Dockerfile"
+}

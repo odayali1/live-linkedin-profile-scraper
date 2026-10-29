@@ -1,0 +1,23 @@
+{
+  "name": "mawsool-live-linkedin-profile",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Live full LinkedIn profile from a URL. A miss is free.",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "apify": "^3.7.0"
+  },
+  "devDependencies": {
+    "@apify/tsconfig": "^0.1.1",
+    "@types/node": "^24.0.0",
+    "typescript": "^6.0.0"
+  },
+  "scripts": {
+    "start": "node dist/main.js",
+    "build": "tsc"
+  },
+  "author": "Mawsool",
+  "license": "UNLICENSED"
+}
