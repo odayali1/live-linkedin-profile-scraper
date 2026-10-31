@@ -9,7 +9,7 @@ This repository documents Mawsool's hosted Actor that returns a live full Linked
 - `result` = `Live profile` means the row was fetched on that run.
 - `result` = `No match, free` means do not invent a profile and do not charge.
 - This Actor does not return email or phone.
-- $0.90 per 1,000 live profiles on every Apify plan, including the free plan. A miss is free.
+- Starting from $0.90 per 1,000 live profiles on Gold and above. The free plan is $2.50. A miss is free.
 - A file can hold up to 1,000,000 URLs. Finished profiles can be skipped on the next run.
 
 ## Keys

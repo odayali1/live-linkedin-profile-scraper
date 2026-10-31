@@ -13,7 +13,7 @@ Mawsool publishes this as an Apify Actor. A hit returns the profile fetched at r
 
 ## Price
 
-$0.90 per 1,000 live profiles on every Apify plan, including the free plan. A miss is free.
+Gold, Platinum, and Diamond are $0.90 per 1,000 live profiles. Silver is $1.60. Bronze is $2.00. The free plan is $2.50. A miss is free.
 
 ## Use it when
 

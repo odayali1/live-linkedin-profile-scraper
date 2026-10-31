@@ -2,7 +2,7 @@
 
 **Scrape a live full LinkedIn profile. A miss is free.** Paste a `linkedin.com/in/...` URL. When the person is found, you get the profile fetched at that moment: headline, company, experience with dates and descriptions, education, skills, certifications, courses, languages, publications, and patents. When nothing is found, you are not charged.
 
-[$0.90 per 1,000 live profiles](https://apify.com/oday/mawsool-live-linkedin-profile) on every Apify plan, including the free plan. No cookies. This does not return email or phone.
+Starting from [$0.90 per 1,000 live profiles](https://apify.com/oday/mawsool-live-linkedin-profile) on Apify. Gold, Platinum, and Diamond are $0.90. The free plan is $2.50. No cookies. This does not return email or phone.
 
 Mawsool is not affiliated with LinkedIn.
 
@@ -20,7 +20,7 @@ The hosted Actor already includes access. You do not put a key in this repositor
 
 `result` is `No match, free` when no profile is found. `charge` is `Free`. You pay only when a live profile comes back.
 
-A file of 10,000 URLs that returns 8,000 profiles costs 8,000 profiles. The 2,000 missing URLs cost nothing. Those 8,000 profiles are $7.20.
+A file of 10,000 URLs that returns 8,000 profiles costs 8,000 profiles. The 2,000 missing URLs cost nothing. On Gold and above, those 8,000 profiles are $7.20.
 
 ## What a live profile includes
 
@@ -39,7 +39,14 @@ A live profile from this endpoint can carry several current roles, past companie
 
 ## Price
 
-$0.90 per 1,000 live profiles on every Apify plan, including the free plan. There is no separate monthly fee.
+| Plan | Per 1,000 live profiles |
+| --- | --- |
+| Free | $2.50 |
+| Bronze | $2.00 |
+| Silver | $1.60 |
+| Gold, Platinum, Diamond | $0.90 |
+
+Apify applies the plan discount automatically. A larger Apify plan is the volume price. There is no separate monthly fee.
 
 ## Bulk
 
