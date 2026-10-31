@@ -6,6 +6,6 @@ On a file of 10,000 URLs that returns 8,000 profiles, the bill is 8,000 profiles
 
 Run it on Apify: https://apify.com/oday/mawsool-live-linkedin-profile
 
-Gold, Platinum, and Diamond are $0.90 per 1,000 live profiles. The free plan is $2.50. An API key for your own integration is at https://mawsool.tech/ or from osama@mawsool.tech and info@mawsool.tech.
+$0.90 per 1,000 live profiles on every Apify plan, including the free plan. An API key for your own integration is at https://mawsool.tech/ or from osama@mawsool.tech and info@mawsool.tech.
 
 Mawsool is not affiliated with LinkedIn.
