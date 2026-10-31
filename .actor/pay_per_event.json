@@ -5,14 +5,7 @@
       "title": "Live LinkedIn profile",
       "description": "One LinkedIn profile URL that returned a live full profile: experience, education, skills, and certifications. A profile that is not found is free. $0.90 per 1,000 on every plan.",
       "isPrimaryEvent": true,
-      "eventTieredPricingUsd": {
-        "FREE": { "tieredEventPriceUsd": 0.0009 },
-        "BRONZE": { "tieredEventPriceUsd": 0.0009 },
-        "SILVER": { "tieredEventPriceUsd": 0.0009 },
-        "GOLD": { "tieredEventPriceUsd": 0.0009 },
-        "PLATINUM": { "tieredEventPriceUsd": 0.0009 },
-        "DIAMOND": { "tieredEventPriceUsd": 0.0009 }
-      }
+      "eventPriceUsd": 0.0009
     }
   }
 }
